@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/Ben/dev/BatchDeux'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/bsimpson/dev/photohub/app/views/devise/registrations'
+let g:netrw_dirhist_2='/home/bsimpson/dev/photohub/app/views/devise'
+let g:netrw_dirhist_3='/home/bsimpson/dev/photohub/app/views/devise/mailer'
+let g:netrw_dirhist_4='/home/bsimpson/dev/photohub/app/controllers'
+let g:netrw_dirhist_5='/home/bsimpson/dev/photohub'
+let g:netrw_dirhist_6='/home/bsimpson/dev/photohub/app/controllers'
+let g:netrw_dirhist_7='/home/bsimpson/dev/photohub'
+let g:netrw_dirhist_8='/home/bsimpson'
