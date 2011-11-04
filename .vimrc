@@ -34,4 +34,7 @@ colorscheme desert256
 "let g:ctags_path=/usr/local/bin/
 "let g:ctags_statusline=1
 
+" Spelling (Ctrl+x Ctrl+k)
+:set spell
+
 call pathogen#infect()
