@@ -1,0 +1,20 @@
+[user]
+  name = Ben Simpson
+  email = ben@mojotech.com
+
+[rerere]
+  enabled = 1
+
+[color]
+  ui = auto
+
+[push]
+  default = current
+
+[alias]
+  s =  status
+  d =  diff --color-words
+  l =  log
+  c =  checkout
+  pom =  pull origin master
+  over =  ! git checkout master && git pull origin master && git checkout - && git rebase master
