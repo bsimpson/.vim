@@ -28,7 +28,8 @@ set ignorecase
 
 " Themes
 syntax on
-colorscheme desert256
+" colorscheme railscasts
+colorscheme zenburn
 
 " Ctags
 "let g:ctags_path=/usr/local/bin/
