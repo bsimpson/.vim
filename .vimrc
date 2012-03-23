@@ -11,6 +11,7 @@ set esckeys! " Prevents delay when pressing ESC followed by insert
 set autoindent
 set tabstop=2
 set expandtab
+set shiftwidth=2
 
 " show trailing whitespace chars
 set list
