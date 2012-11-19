@@ -19,3 +19,18 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/closetag"]
+	path = bundle/closetag
+	url = git://github.com/vim-scripts/closetag.vim.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-rubytest"]
+	path = bundle/vim-rubytest
+	url = git://github.com/janx/vim-rubytest.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/ruby-cucumber"]
+	path = bundle/ruby-cucumber
+	url = git://github.com/vinhtiensinh/ruby-cucumber.git

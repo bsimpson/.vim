@@ -1,6 +1,6 @@
 Notes for adding ViM plugins via Pathogen:
 
-git submodule git://path/to/repo bundle/name_of_project
+git submodule add git://path/to/repo bundle/name_of_project
   this creates an entry in .gitmodules
 git submodule init
   check that this is in .git/config

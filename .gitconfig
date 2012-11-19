@@ -1,9 +1,9 @@
 [user]
-  name = Ben Simpson
-  email = ben@mojotech.com
+	name = Ben Simpson
+	email = thehoagie@gmail.com
 
 [rerere]
-  enabled = 1
+  enabled = 0
 
 [color]
   ui = auto
@@ -13,7 +13,7 @@
 
 [alias]
   s =  status
-  d =  diff --color-words
+  d =  diff
   l =  log
   c =  checkout
   pom =  pull origin master

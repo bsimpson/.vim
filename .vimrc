@@ -40,3 +40,5 @@ colorscheme zenburn
 :set spell
 
 call pathogen#infect()
+
+filetype plugin indent on
