@@ -34,3 +34,6 @@
 [submodule "bundle/ruby-cucumber"]
 	path = bundle/ruby-cucumber
 	url = git://github.com/vinhtiensinh/ruby-cucumber.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
