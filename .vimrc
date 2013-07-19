@@ -43,3 +43,7 @@ colorscheme darkburn
 call pathogen#infect()
 
 filetype plugin indent on
+
+" Buffer explorer options
+let g:bufExplorerShowRelativePath=1  " Show relative paths.
+let g:bufExplorerSplitOutPathName=0  " Don't split the path and file
