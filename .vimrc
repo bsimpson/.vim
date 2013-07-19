@@ -31,8 +31,7 @@ set ignorecase
 
 " Themes
 syntax on
-" colorscheme railscasts
-colorscheme zenburn
+colorscheme darkburn
 
 " Ctags
 "let g:ctags_path=/usr/local/bin/
