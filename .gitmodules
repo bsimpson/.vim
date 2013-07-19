@@ -37,3 +37,9 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/blockle"]
+	path = bundle/blockle
+	url = git@github.com:vim-scripts/blockle.vim.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = git@github.com:jwhitley/vim-matchit.git
