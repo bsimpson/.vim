@@ -52,3 +52,11 @@ au BufNewFile,BufRead *.thor set filetype=ruby
 
 " copy partial file path to system clipboard
 :nmap fy :let @+ = expand("%")
+
+" vim-rubytest configuration of test options
+let g:rubytest_cmd_test = "bundle exec testdrb %p"
+let g:rubytest_cmd_testcase = "bundle exec testdrb %p -- -n '/%c/'"
+let g:rubytest_cmd_spec = "bundle exec spec -f specdoc %p"
+let g:rubytest_cmd_example = "bundle exec spec -f specdoc %p -e '%c'"
+let g:rubytest_cmd_feature = "bundle exec cucumber %p"
+let g:rubytest_cmd_story = "bundle exec cucumber %p -n '%c'"
