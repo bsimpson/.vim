@@ -18,6 +18,7 @@
   c =  checkout
   pom =  pull origin master
   over =  ! git checkout master && git pull origin master && git checkout - && git rebase master
+  logrefs = log --format="%d" -n 1
 
 [rebase]
   autosquash = true

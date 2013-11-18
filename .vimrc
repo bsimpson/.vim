@@ -47,3 +47,8 @@ filetype plugin indent on
 " Buffer explorer options
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerSplitOutPathName=0  " Don't split the path and file
+
+au BufNewFile,BufRead *.thor set filetype=ruby
+
+" copy partial file path to system clipboard
+:nmap fy :let @+ = expand("%")
