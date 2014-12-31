@@ -29,6 +29,8 @@ set ruler
 set hlsearch
 set ignorecase
 
+call pathogen#infect()
+
 " Themes
 syntax on
 colorscheme darkburn
@@ -39,8 +41,6 @@ colorscheme darkburn
 
 " Spelling (Ctrl+x Ctrl+k)
 :set spell
-
-call pathogen#infect()
 
 filetype plugin indent on
 
@@ -54,9 +54,35 @@ au BufNewFile,BufRead *.thor set filetype=ruby
 :nmap fy :let @+ = expand("%")
 
 " vim-rubytest configuration of test options
-let g:rubytest_cmd_test = "bundle exec testdrb %p"
-let g:rubytest_cmd_testcase = "bundle exec testdrb %p -- -n '/%c/'"
+
+" Spork
+" let g:rubytest_cmd_test = "bundle exec testdrb %p"
+" let g:rubytest_cmd_testcase = "bundle exec testdrb %p -- -n '/%c/'"
+
+" Spring
+" let g:rubytest_cmd_test = "bundle exec spring testunit %p"
+" let g:rubytest_cmd_testcase = "bundle exec spring testunit %p -n '/%c/'"
+
+" Zeus
+let g:rubytest_cmd_test = "zeus test %p"
+let g:rubytest_cmd_testcase = "zeus test %p -n '/%c/'"
+
 let g:rubytest_cmd_spec = "bundle exec spec -f specdoc %p"
 let g:rubytest_cmd_example = "bundle exec spec -f specdoc %p -e '%c'"
 let g:rubytest_cmd_feature = "bundle exec cucumber %p"
 let g:rubytest_cmd_story = "bundle exec cucumber %p -n '%c'"
+
+" alias :W to :w
+command W w
+
+" Allow aligning a key value pair
+" AddTabularPattern first_colon /^[^:]*:/r0l1l0
+
+" Ack.vim to use ag instead
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" :Tidy will format document
+command Tidy set ft=html | execute "%!tidy -q -i -html"
+
+" tree view for netrw
+let g:netrw_liststyle=3
