@@ -103,8 +103,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-#source ~/.git-completion.sh
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+if [ -f /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh ]; then
+  source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+  export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+fi
 
 # export HISTIGNORE="&:ls:ls *:[bf]g:exit"
 
