@@ -116,6 +116,7 @@ alias gl="git l"
 alias gc="git c"
 alias gpom="git pom"
 alias gover="git over"
+alias bi="bundle install"
 
 export EDITOR=vim
 export RUBY_HEAP_MIN_SLOTS=1000000
