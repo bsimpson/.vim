@@ -47,3 +47,13 @@ e.g.: `/usr/local/opt/git/etc/bash_completion.d/`
 
 Change this line to match your path in the `~/.bashrc` file. You should see the branch name show in your PS1 
 prompt when you are in directories that have a git repository initialized.  
+
+# Installing Ruby
+
+This `~/.bashrc` profile already comes with rbenv integration (towards the bottom when we call rbenv init -). Just install rbenv, then use rbenv to install your Ruby version(s)
+
+* Download and install brew
+* `brew install rbenv`
+* `rbenv list rubies`
+* `rbenv install xxx`
+* `rbenv global xxx`
