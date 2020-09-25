@@ -1,28 +1,52 @@
+# Installation
+
+```
+cd ~
+git clone git@github.com:bsimpson/.vim.git
+```
+
+Install ViM extensions:
+
+```
+cd ~/.vim
+git submodule init
+git submodule update
+```
+
 # Notes for adding ViM plugins via Pathogen:
 
 ```
 git submodule add git://path/to/repo bundle/name_of_project
 ```
-  this creates an entry in .gitmodules
+
+this creates an entry in .gitmodules
 
 ```
 git submodule init
 ```
-  check that this is in .git/config
+
+check that this is in .git/config
 
 ```
 git submodule update
-  this updates the module
 ```
+
+this updates the module
 
 Pathogen will load projects under bundle automatically via `.vimrc` call Pathogen#infect()
 
 Commit submodule so this will be available in the remote repo
 
-# Linking the dot files:
+# Linking ALL the dot files:
 
 ```
 ln -s .vim/.{vimrc,rdebugrc,irbrc,gemrc,bashrc,gitconfig} ~
+```
+
+# OR Linking just the vim dot file:
+
+```
+ln -s .vim/.vimrc ~
 ```
 
 # OS X Notes
